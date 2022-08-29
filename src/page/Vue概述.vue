@@ -1,5 +1,7 @@
 <template>
-  <div>Vue页面展示内容</div>
+  <div>
+    <h1>Hello</h1>
+  </div>
 </template>
 <script lang="ts" setup>
 import { onMounted, getCurrentInstance } from "vue";

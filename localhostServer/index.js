@@ -1,10 +1,11 @@
 const fs = require("fs");
 const express = require("express");
+const chalk = require("chalk");
+
 const bodyParser = require("body-parser");
 const cors = require("cors");
 const app = express();
 app.use(cors());
-
 const port = 5000;
 
 app.get("/", (req, res) => {
@@ -17,5 +18,5 @@ app.get("/", (req, res) => {
   });
 });
 app.listen(port, () => {
-  console.log(`服务器运行在 http://localhost:${port}/`);
+  console.log(`服务器运行在:${chalk.green("http://localhost:" + port)}`);
 });

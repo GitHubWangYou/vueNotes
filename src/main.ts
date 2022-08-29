@@ -24,4 +24,6 @@ VueMarkdownEditor.use(vuepressTheme, {
     //md.set(option).use(plugin);
   },
 });
-createApp(App).use(Antd).use(VMdPreview).use(VueMarkdownEditor).mount("#app");
+const app = createApp(App);
+app.config.globalProperties.wang = "global_instance_properties";
+app.use(Antd).use(VMdPreview).use(VueMarkdownEditor).mount("#app");
