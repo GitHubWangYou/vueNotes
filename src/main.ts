@@ -19,7 +19,7 @@ VMdPreview.use(vuepressTheme, {
 });
 VueMarkdownEditor.use(vuepressTheme, {
   Prism,
-  extend(md) {
+  extend() {
     // md为 markdown-it 实例，可以在此处进行修改配置,并使用 plugin 进行语法扩展
     //md.set(option).use(plugin);
   },
